@@ -31,18 +31,25 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.4.0.84",
+    "IDEVersion": "2023.8.1.102",
   },
   "resources": [
+    {"id":{"name":"spr_waterbowl","path":"sprites/spr_waterbowl/spr_waterbowl.yy",},},
+    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
     {"id":{"name":"spr_toaster","path":"sprites/spr_toaster/spr_toaster.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
+    {"id":{"name":"Sprite5","path":"sprites/Sprite5/Sprite5.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"obj_thing","path":"objects/obj_thing/obj_thing.yy",},},
     {"id":{"name":"textobject2","path":"objects/textobject2/textobject2.yy",},},
+    {"id":{"name":"obj_waterbowl","path":"objects/obj_waterbowl/obj_waterbowl.yy",},},
+    {"id":{"name":"obj_pee","path":"objects/obj_pee/obj_pee.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],

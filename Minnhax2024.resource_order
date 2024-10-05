@@ -17,7 +17,13 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"spr_waterbowl","order":3,"path":"sprites/spr_waterbowl/spr_waterbowl.yy",},
+    {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"Sprite5","order":4,"path":"sprites/Sprite5/Sprite5.yy",},
+    {"name":"obj_thing","order":2,"path":"objects/obj_thing/obj_thing.yy",},
     {"name":"textobject2","order":1,"path":"objects/textobject2/textobject2.yy",},
+    {"name":"obj_waterbowl","order":3,"path":"objects/obj_waterbowl/obj_waterbowl.yy",},
+    {"name":"obj_pee","order":4,"path":"objects/obj_pee/obj_pee.yy",},
   ],
 }
