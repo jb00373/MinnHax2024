@@ -1,24 +1,56 @@
+left_key = keyboard_check(ord("A"));
+right_key = keyboard_check(ord("D"));
+up_key = keyboard_check(ord("W"));
+down_key = keyboard_check(ord("S"));
+
+if up_key {
+	up_key = 1;
+}
+
+x_direction = right_key - left_key;
+y_direction = down_key - up_key;
+
+if x_direction !=0 {
+	x_last_direction = x_direction;
+	image_xscale = x_direction;
+}
+else image_xscale = x_last_direction;
+
+
 //MOVEMENT 
-if (keyboard_check(ord("A"))) {
-	xspd = -spd;
-	image_xscale = -1;
-}
-else if (keyboard_check(ord("D"))) {
-	xspd = spd;
-	image_xscale = 1;
+//X
+if abs(xspd + (acceleration * x_direction)) > max_spd {
+	xspd = max_spd * x_direction;
 }
 else {
-	xspd = 0;
+	xspd += acceleration * x_direction;
 }
-if (keyboard_check(ord("W"))) {
-	yspd = -spd;
+
+if x_direction == 0 {
+	if abs(xspd - (deceleration * x_direction)) <= 0 {
+		xspd = 0;
+	}
+	else {
+		xspd -= deceleration * x_last_direction;
+	}
 }
-else if (keyboard_check(ord("S"))) {
-	yspd = spd;
-	image_yscale = 1;
+		
+
+//Y
+if abs(yspd + (acceleration * y_direction)) > max_spd {
+	yspd = max_spd * y_direction;
 }
 else {
-	yspd = 0;
+	yspd += acceleration * y_direction;
+}
+
+if y_direction == 0 {
+	if abs(yspd - (deceleration * y_direction)) <= 0 {
+		yspd = 0;
+	}
+	else {
+		yspd -= deceleration * y_last_direction;
+	}
 }
 
 if (xspd == 0 && yspd == 0) {
@@ -26,6 +58,15 @@ if (xspd == 0 && yspd == 0) {
 }
 else {
 	image_speed = 1;
+}
+
+//Collisions
+if instance_place(x + xspd, y, obj_wall) {
+	xspd = 0;
+}
+
+if instance_place(x, y + yspd, obj_wall) {
+	yspd = 0;
 }
 
 x += xspd;
