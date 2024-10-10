@@ -16,7 +16,6 @@ if x_direction !=0 {
 }
 else image_xscale = x_last_direction;
 
-
 //MOVEMENT 
 //X
 if abs(xspd + (acceleration * x_direction)) > max_spd {
