@@ -9,7 +9,6 @@
   "instanceCreationOrder": [
     {"name":"inst_62E9900D","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_7BFAFD9E","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_59AACDEE","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4630BB05","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_38B74DBE","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_71DA0B08","path":"rooms/Room1/Room1.yy",},
@@ -24,6 +23,7 @@
     {"name":"inst_5FA4E439","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_4A8B3DB1","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_739B7AD9","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_59AACDEE","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd": false,
   "layers": [
