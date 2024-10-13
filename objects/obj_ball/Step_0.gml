@@ -13,8 +13,8 @@ if phase = 1 && instance_place(x, y, obj_charles) && held = false
 	}
 if phase = 2 && instance_place(x, y, obj_charles) && held = false
 	{
-	x = 670;
-	y = 50;
+	x = 720;
+	y = 330;
 	phase = 3;
 	}
 

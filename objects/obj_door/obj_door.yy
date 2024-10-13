@@ -1,19 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_pressureplate",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-  ],
+  "name": "obj_door",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_wall",
+    "path": "objects/obj_wall/obj_wall.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite3",
-    "path": "sprites/Sprite3/Sprite3.yy",
+    "name": "Sprite14",
+    "path": "sprites/Sprite14/Sprite14.yy",
   },
   "spriteMaskId": null,
   "visible": true,
