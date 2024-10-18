@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+
+//tracking which part of the level player is on
 phase = 0;
 
 
@@ -9,6 +9,6 @@ phase = 0;
 
 
 
-// Inherit the parent event
+// To allow object to be picked up
 event_inherited();
 
