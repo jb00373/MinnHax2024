@@ -51,7 +51,15 @@ if room = r_park && x = 654
 	}
 
 
-
+//CHESS PRESSURE PLATE - start maze
+if room = r_chess && x = 160
+	{
+		if player != noone && pressed = false
+			{
+			pressed = true
+			instance_create_depth(192, 224, 1, obj_wall)
+			}
+	}
 
 
 
