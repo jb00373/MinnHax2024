@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_door",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -29,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite14",
-    "path": "sprites/Sprite14/Sprite14.yy",
+    "name": "spr_fence",
+    "path": "sprites/spr_fence/spr_fence.yy",
   },
   "spriteMaskId": null,
   "visible": true,
