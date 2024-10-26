@@ -1,9 +1,21 @@
-/// @description Insert description here
-// You can write your code in this editor
+//BALL CODE FOR PARK
+if room = r_park 
+	{
 if phase = 0 {
-	x = 272;
-	y = 50;
-	phase = 1;
+	if x < 272
+		{
+		x ++;	
+		x ++;
+		}
+	if y > 50
+		{
+		y --;
+		y --;
+		}
+	if x > 271 && y < 51
+		{
+		phase = 1;
+		}
 	}
 if phase = 1 && instance_place(x, y, obj_charles) && held = false
 	{
@@ -22,8 +34,12 @@ if phase = 2 && instance_place(x, y, obj_charles) && held = false
 	instance_destroy(inst_2780CB56) //barrier
 	phase = 3;
 	}
+	}
 
-
+if room = r_home
+	{
+		
+	}
 
 
 

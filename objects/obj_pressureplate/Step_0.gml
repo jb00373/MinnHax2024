@@ -2,6 +2,16 @@
 var player = instance_place(x, y, obj_player)
 var box = instance_place(x, y, obj_pushblock)
 
+//Sprites for pressure plates
+if pressed = true
+	{
+	sprite_index = spr_PPdown	
+	}
+if pressed = false
+	{
+	sprite_index = spr_PPup	
+	}
+	
 //PARK PRESSURE PLATE - middle 1
 if room = r_park && x = 448 
 	{

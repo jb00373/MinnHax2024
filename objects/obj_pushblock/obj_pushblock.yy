@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite9",
-    "path": "sprites/Sprite9/Sprite9.yy",
+    "name": "spr_box",
+    "path": "sprites/spr_box/spr_box.yy",
   },
   "spriteMaskId": null,
   "visible": true,

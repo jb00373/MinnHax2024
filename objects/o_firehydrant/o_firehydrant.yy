@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite13",
-    "path": "sprites/Sprite13/Sprite13.yy",
+    "name": "spr_firehydrant",
+    "path": "sprites/spr_firehydrant/spr_firehydrant.yy",
   },
   "spriteMaskId": null,
   "visible": true,

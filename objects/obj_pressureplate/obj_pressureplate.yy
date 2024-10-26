@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite3",
-    "path": "sprites/Sprite3/Sprite3.yy",
+    "name": "spr_PPup",
+    "path": "sprites/spr_PPup/spr_PPup.yy",
   },
   "spriteMaskId": null,
   "visible": true,
