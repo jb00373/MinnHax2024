@@ -28,4 +28,10 @@ if (keyboard_check_pressed(ord("H")))
 	scr_hearts();	
 	}
 
+if room = r_home && o_music.room_checker = 1
+	{
+	image_xscale = -0.13;
+	x = 190;
+	y = 160;
+	}
 

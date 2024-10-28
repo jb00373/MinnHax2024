@@ -1,3 +1,14 @@
+//resets current room
+if (keyboard_check_pressed(ord("R")))
+	{
+	room_restart();
+	}
+//Bark
+if (keyboard_check_pressed(ord("B")))
+	{
+	audio_play_sound(choose(s_bark1, s_bark2), 5, 0, 0.25)
+	}
+
 left_key = keyboard_check(ord("A"));
 right_key = keyboard_check(ord("D"));
 up_key = keyboard_check(ord("W"));
@@ -82,6 +93,7 @@ if (pickup > 0) && (keyboard_check_pressed(ord("Q")))
 		}
 	if pickup.held = true
 		{
+			audio_play_sound(s_drop, 5, 0, 0.25);
 			pickup.held = false;
 			exit;
 		}
@@ -89,14 +101,16 @@ if (pickup > 0) && (keyboard_check_pressed(ord("Q")))
 
 
 //PEE
-var waterbowl = instance_place(x, y, obj_waterbowl)
-if (waterbowl > 0) && (keyboard_check_pressed(ord("Z"))) && pee = false
-	{
-		pee = true;
-	}
-if (keyboard_check_pressed(ord("X"))) && pee = true
+if (keyboard_check_pressed(ord("E"))) && pee = true
 	{
 	instance_create_depth(x, y, 0, obj_pee);
 	pee = false;
 	}
+//DRINK
+var waterbowl = instance_place(x, y, obj_waterbowl)
+if (waterbowl > 0) && (keyboard_check_pressed(ord("E"))) && pee = false
+	{
+		pee = true;
+	}
+
 

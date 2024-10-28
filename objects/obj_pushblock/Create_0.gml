@@ -6,6 +6,7 @@ xspd = 0;
 yspd = 0;
 max_spd = 2;
 
+resetter = 0; //resettng box when out of bounds
 
 
 

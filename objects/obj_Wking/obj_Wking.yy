@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "n_bish",
-    "path": "sprites/n_bish/n_bish.yy",
+    "name": "King",
+    "path": "sprites/King/King.yy",
   },
   "spriteMaskId": null,
   "visible": true,

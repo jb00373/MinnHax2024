@@ -18,6 +18,28 @@ if instance_place(x, y, obj_player) {
 		}
 }
 
+//resets box if it goes out of bounds
+if instance_place(x, y, obj_hedge)
+	{
+	resetter ++;	
+	}
+if instance_place(x, y, obj_wall)
+	{
+	resetter ++;	
+	}
+if resetter = 200
+	{
+	if room = r_home
+		{
+			x = 400
+			y = 300
+		}
+	if room = r_home
+		{
+			x = 480
+			y = 224
+		}
+	}
 
 
 

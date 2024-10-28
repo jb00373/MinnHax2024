@@ -4,6 +4,7 @@
 
 audio_play_sound(music, 5, true, 1)
 
+room_checker = 0; //Checks if chess room has been complete for home spawn
 
 
 

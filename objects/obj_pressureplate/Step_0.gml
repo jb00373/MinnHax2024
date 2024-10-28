@@ -1,6 +1,7 @@
 
 var player = instance_place(x, y, obj_player)
 var box = instance_place(x, y, obj_pushblock)
+var chess = instance_place(x, y, obj_thing)
 
 //Sprites for pressure plates
 if pressed = true
@@ -46,7 +47,7 @@ if global.park1 = 1 && global.park2 = 1
 		instance_destroy(inst_504AAEC)
 	}
 //PARK PRESSURE PLATE - right side
-if room = r_park && x = 654
+if room = r_park && x = 658
 	{
 		if player != noone or box != noone
 			{
@@ -67,9 +68,34 @@ if room = r_chess && x = 160
 		if player != noone && pressed = false
 			{
 			pressed = true
-			instance_create_depth(192, 224, 1, obj_wall)
+			instance_create_depth(192, 224, 1, obj_door)
 			}
 	}
 
+//CHESS PRESSURE PLATE - to exit maze
+if room = r_chess && x = 180
+	{
+		if player != noone or chess != noone
+			{
+			pressed = true
+			}
+		else pressed = false
+		if pressed = true
+			{
+			inst_3CFA8F24.y = -160
+			}
+		else inst_3CFA8F24.y = 160
+	}
+
+
+//HOME PRESSURE PLATE
+if room = r_home
+	{
+		if player != noone or box != noone
+			{
+			pressed = true
+			}
+		else pressed = false
+	}
 
 

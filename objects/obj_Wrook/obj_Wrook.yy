@@ -9,7 +9,10 @@
     "name": "chess pieces",
     "path": "folders/Objects/chess pieces.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_thing",
+    "path": "objects/obj_thing/obj_thing.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

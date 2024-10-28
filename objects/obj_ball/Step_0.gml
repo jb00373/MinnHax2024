@@ -1,6 +1,7 @@
 //BALL CODE FOR PARK
 if room = r_park 
 	{
+//Throws ball to first section (maze)
 if phase = 0 {
 	if x < 272
 		{
@@ -17,28 +18,78 @@ if phase = 0 {
 		phase = 1;
 		}
 	}
+//throws balls to second section (pressure plates)
 if phase = 1 && instance_place(x, y, obj_charles) && held = false
 	{
-	x = 490;
-	y = 50;
 	obj_charles.happiness = true;
 	instance_destroy(inst_696610A3) //barrier
 	phase = 2;
 	}
-if phase = 2 && instance_place(x, y, obj_charles) && held = false
+if phase = 2 && held = false
 	{
-	x = 720;
-	y = 330;
+	if x < 490
+		{
+		x ++;	
+		x ++;
+		}
+	if y > 50
+		{
+		y --;
+		}
+	if x > 489 && y < 51
+		{
+		phase = 3;
+		}
+	}
+//throws ball to third section (fire hydrant)
+if phase = 3 && instance_place(x, y, obj_charles) && held = false
+	{
 	obj_charles.happiness = true;
 	instance_destroy(inst_59F96402) //barrier
 	instance_destroy(inst_2780CB56) //barrier
-	phase = 3;
+	phase = 4;
+	}
+if phase = 4 && held = false
+	{
+	if x < 720
+		{
+		x ++;	
+		x ++;
+		}
+	if y < 330
+		{
+		y ++;
+		}
+	if x > 719 && y > 329
+		{
+		phase = 5;
+		}
+	}
+if phase = 5 && instance_place(x, y, obj_charles) && held = false
+	{
+	obj_charles.happiness = true;
+	instance_destroy(inst_24323414) //barrier to exit
+	instance_destroy(inst_E3E74F1) //barrier to exit
+	phase = 6;
 	}
 	}
-
+	
+	
 if room = r_home
 	{
-		
+	if held = true
+		{
+		phase = 1;	
+		}
+	if phase = 0 && held = false && x < 500
+		{
+		x ++;
+		x ++;
+		}
+	if phase = 1 && instance_place(x, y, obj_charles) && held = false
+		{
+		phase = 0;
+		}
 	}
 
 
