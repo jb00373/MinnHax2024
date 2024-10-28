@@ -52,6 +52,7 @@
     {"name":"b_pawn","order":10,"path":"sprites/b_pawn/b_pawn.yy",},
     {"name":"s_drop","order":3,"path":"sounds/s_drop/s_drop.yy",},
     {"name":"spr_fence","order":1,"path":"sprites/spr_fence/spr_fence.yy",},
+    {"name":"spr_block_pit","order":35,"path":"sprites/spr_block_pit/spr_block_pit.yy",},
     {"name":"spr_toaster","order":1,"path":"sprites/spr_toaster/spr_toaster.yy",},
     {"name":"obj_Wpawnmove","order":16,"path":"objects/obj_Wpawnmove/obj_Wpawnmove.yy",},
     {"name":"o_music","order":16,"path":"objects/o_music/o_music.yy",},
@@ -84,6 +85,7 @@
     {"name":"obj_hedge","order":8,"path":"objects/obj_hedge/obj_hedge.yy",},
     {"name":"obj_blinker","order":15,"path":"objects/obj_blinker/obj_blinker.yy",},
     {"name":"r_init","order":3,"path":"rooms/r_init/r_init.yy",},
+    {"name":"spr_pit_edge","order":14,"path":"sprites/spr_pit_edge/spr_pit_edge.yy",},
     {"name":"King","order":2,"path":"sprites/King/King.yy",},
     {"name":"spr_box","order":23,"path":"sprites/spr_box/spr_box.yy",},
     {"name":"spr_finish","order":29,"path":"sprites/spr_finish/spr_finish.yy",},
@@ -108,6 +110,7 @@
     {"name":"obj_Wpawn","order":10,"path":"objects/obj_Wpawn/obj_Wpawn.yy",},
     {"name":"spr_charlesblink","order":17,"path":"sprites/spr_charlesblink/spr_charlesblink.yy",},
     {"name":"spr_charles","order":15,"path":"sprites/spr_charles/spr_charles.yy",},
+    {"name":"obj_pit_edge","order":22,"path":"objects/obj_pit_edge/obj_pit_edge.yy",},
     {"name":"b_knight","order":9,"path":"sprites/b_knight/b_knight.yy",},
   ],
 }
