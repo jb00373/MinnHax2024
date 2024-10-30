@@ -23,13 +23,14 @@ if room = r_home && o_music.room_checker = 1
 if room = r_park
 	{
 	draw_text(145, 170, "Let's play fetch!")
+	draw_text_ext_transformed(320, 55, "Press Q to pick up/drop", 15, 300, 0.6, 0.6, 0)
 	draw_text_ext_transformed(670, 114, "Press E to drink water/pee", 15, 150, 0.75, 0.75, 0)
 	}
 	
 if room = r_chess
 	{
 	draw_text_ext_transformed(416, 160, "Help Leo get a checkmate with white", 15, 150, 0.75, 0.75, 0)
-	draw_text_ext_transformed(600, 290, "Grab the correct piece from the maze and place it on the correct highlighted tile", 15, 250, 0.75, 0.75, 0)
+	draw_text_ext_transformed(600, 290, "Grab the correct piece from the maze and place it on the highlighted tile", 15, 250, 0.75, 0.75, 0)
 	}
 	
 

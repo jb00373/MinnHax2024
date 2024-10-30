@@ -23,6 +23,11 @@ if phase = 1 && instance_place(x, y, obj_charles) && held = false
 	{
 	obj_charles.happiness = true;
 	instance_destroy(inst_696610A3) //barrier
+	if sfx1 = 0 //sound effect
+			{
+			sfx1 = 1;	
+			audio_play_sound(s_activate, 5, 0, 0.25)
+			}
 	phase = 2;
 	}
 if phase = 2 && held = false
@@ -47,6 +52,11 @@ if phase = 3 && instance_place(x, y, obj_charles) && held = false
 	obj_charles.happiness = true;
 	instance_destroy(inst_59F96402) //barrier
 	instance_destroy(inst_2780CB56) //barrier
+	if sfx2 = 0 //sound effect
+			{
+			sfx2 = 5;	
+			audio_play_sound(s_activate, 5, 0, 0.25)
+			}
 	phase = 4;
 	}
 if phase = 4 && held = false
@@ -70,6 +80,11 @@ if phase = 5 && instance_place(x, y, obj_charles) && held = false
 	obj_charles.happiness = true;
 	instance_destroy(inst_24323414) //barrier to exit
 	instance_destroy(inst_E3E74F1) //barrier to exit
+	if sfx3 = 0 //sound effect
+			{
+			sfx3 = 5;	
+			audio_play_sound(s_activate, 5, 0, 0.25)
+			}
 	phase = 6;
 	}
 	}
@@ -88,6 +103,7 @@ if room = r_home
 		}
 	if phase = 1 && instance_place(x, y, obj_charles) && held = false
 		{
+		obj_charles.happiness = true;
 		phase = 0;
 		}
 	}

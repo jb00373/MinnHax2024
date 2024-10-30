@@ -60,6 +60,7 @@
     {"name":"Queen","order":5,"path":"sprites/Queen/Queen.yy",},
     {"name":"Knight","order":4,"path":"sprites/Knight/Knight.yy",},
     {"name":"obj_ball","order":10,"path":"objects/obj_ball/obj_ball.yy",},
+    {"name":"spr_water","order":36,"path":"sprites/spr_water/spr_water.yy",},
     {"name":"obj_door","order":13,"path":"objects/obj_door/obj_door.yy",},
     {"name":"Sprite9","order":13,"path":"sprites/Sprite9/Sprite9.yy",},
     {"name":"obj_puddle","order":15,"path":"objects/obj_puddle/obj_puddle.yy",},

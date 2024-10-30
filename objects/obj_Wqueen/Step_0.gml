@@ -14,6 +14,12 @@ if held = false && instance_place(x, y, obj_board)
 			y = 245;
 			instance_destroy(inst_5EB062B5);
 			instance_destroy(inst_54F8C188);
+			if activated = false
+				{
+				obj_charles.happiness = true;
+				audio_play_sound(s_activate, 5, 0, 0.25)
+				activated = true;
+				}
 			}
 		else {
 			x = 490;

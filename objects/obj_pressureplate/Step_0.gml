@@ -44,7 +44,12 @@ if room = r_park && x = 512
 //If both pressure plates are pressed, removes barrier
 if global.park1 = 1 && global.park2 = 1
 	{
-		instance_destroy(inst_504AAEC)
+		instance_destroy(inst_504AAEC);
+		if sfx1 = 0 //sound effect
+			{
+			sfx1 = 1;	
+			audio_play_sound(s_activate, 5, 0, 0.25)
+			}
 	}
 //PARK PRESSURE PLATE - right side
 if room = r_park && x = 658
@@ -69,6 +74,11 @@ if room = r_chess && x = 160
 			{
 			pressed = true
 			instance_create_depth(192, 224, 1, obj_door)
+			if sfx2 = 0 //sound effect
+			{
+			sfx2 = 1;	
+			audio_play_sound(s_activate, 5, 0, 0.25)
+			}
 			}
 	}
 

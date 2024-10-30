@@ -23,10 +23,10 @@ if happiness = true
 	}
 
 //testing heart spawn, Can remove later
-if (keyboard_check_pressed(ord("H")))
-	{
-	scr_hearts();	
-	}
+//if (keyboard_check_pressed(ord("H")))
+//	{
+//	scr_hearts();	
+//	}
 
 if room = r_home && o_music.room_checker = 1
 	{
