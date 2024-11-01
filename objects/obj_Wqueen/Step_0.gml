@@ -16,7 +16,7 @@ if held = false && instance_place(x, y, obj_board)
 			instance_destroy(inst_54F8C188);
 			if activated = false
 				{
-				obj_charles.happiness = true;
+				obj_leo.happiness = true;
 				audio_play_sound(s_activate, 5, 0, 0.25)
 				activated = true;
 				}

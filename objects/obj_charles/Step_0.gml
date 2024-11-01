@@ -19,6 +19,7 @@ if sprite_index = spr_charlesblink
 if happiness = true
 	{
 	scr_hearts()
+	audio_play_sound(s_bark1, 1, false, 0.25);
 	happiness = false;
 	}
 

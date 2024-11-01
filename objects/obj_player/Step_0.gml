@@ -23,9 +23,9 @@ y_direction = down_key - up_key;
 
 if x_direction !=0 {
 	x_last_direction = x_direction;
-	image_xscale = x_direction;
+	image_xscale = x_direction * scale;
 }
-else image_xscale = x_last_direction;
+else image_xscale = x_last_direction * scale;
 
 //MOVEMENT 
 //X
@@ -89,12 +89,14 @@ if (pickup > 0) && (keyboard_check_pressed(ord("Q")))
 	if pickup.held = false
 		{
 			pickup.held = true;
+			sprite_index = spr_toaster_holding;
 			exit;
 		}
 	if pickup.held = true
 		{
 			audio_play_sound(s_drop, 5, 0, 0.25);
 			pickup.held = false;
+			sprite_index = spr_toaster_walk;
 			exit;
 		}
 	}
@@ -102,15 +104,19 @@ if (pickup > 0) && (keyboard_check_pressed(ord("Q")))
 
 //PEE
 if (keyboard_check_pressed(ord("E"))) && pee = true
-	{
-	instance_create_depth(x, y, 0, obj_pee);
-	pee = false;
+{
+	if x_last_direction == 1 {
+		instance_create_depth(x + (piss_offset_x * x_last_direction), y + piss_offset_y, 0, obj_pee);
 	}
+	else {
+		instance_create_depth(x + (piss_offset_x), y + piss_offset_y, 0, obj_pee);
+	}
+	pee = false;
+}
 //DRINK
 var waterbowl = instance_place(x, y, obj_waterbowl)
 if (waterbowl > 0) && (keyboard_check_pressed(ord("E"))) && pee = false
 	{
 		pee = true;
 	}
-
 
