@@ -2,7 +2,7 @@
 timer ++;
 if timer = 2
 	{
-	y ++;
+	y --;
 	timer = 0;
 	}
 

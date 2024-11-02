@@ -8,19 +8,23 @@ if player > 0
 	
 if transition > 30
 	{
-	if room = r_home
+		if room = r_home
 		{
-		room_goto(r_park)
+			room_goto(r_park)
 		}
-	if room = r_park
+		if room = r_park
 		{
-		room_goto(r_chess)
+			room_goto(r_chess)
 		}
-	if room = r_chess
+		if room = r_chess
 		{
-		room_goto(r_home)
+			room_goto(r_gamestop)
+		}
+	
+		if room = r_gamestop
+		{
+			room_goto(r_home)
 		}
 	}
-
 
 

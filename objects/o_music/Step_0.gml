@@ -6,7 +6,7 @@
 //Real start
 if room = r_init
 	{
-	room_goto(r_home)	
+	room_goto(r_gamestop)	
 	}
 if room = r_chess
 	{
