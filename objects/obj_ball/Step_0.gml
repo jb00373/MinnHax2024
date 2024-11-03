@@ -91,6 +91,8 @@ if phase = 5 && instance_place(x, y, obj_charles) && held = false
 			{
 			sfx3 = 5;	
 			audio_play_sound(s_activate, 5, 0, 0.25)
+			audio_play_sound(s_drop, 5, 0, 0.25)
+			audio_play_sound(just_toastin_around, 5, 0, 0.25)
 			}
 	phase = 6;
 	}

@@ -6,7 +6,7 @@ if player > 0
 	transition ++;	
 	}
 	
-if transition > 30
+if transition > 10
 	{
 		if room = r_home
 		{
@@ -24,6 +24,7 @@ if transition > 30
 		if room = r_gamestop
 		{
 			room_goto(r_home)
+			
 		}
 	}
 

@@ -94,7 +94,7 @@ if (pickup > 0) && (keyboard_check_pressed(ord("Q")))
 		}
 	if pickup.held = true
 		{
-			audio_play_sound(s_drop, 5, 0, 0.25);
+			//audio_play_sound(s_drop, 5, 0, 0.25);
 			pickup.held = false;
 			sprite_index = spr_toaster_walk;
 			exit;

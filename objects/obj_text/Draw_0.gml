@@ -23,7 +23,7 @@ if room = r_home && o_music.room_checker = 0
 //home at end of day
 if room = r_home && o_music.room_checker = 1
 	{
-	draw_text_ext_transformed(100, 130, "Great job Toaster! Why don't you have a nap?", 20, 160, 0.5, 0.5, 0)
+	draw_text_ext_transformed(100, 130, "Great job Toaster! Why don't you have a nap?", 25, 160, 0.5, 0.5, 0)
 	}
 	
 if room = r_park
@@ -35,8 +35,8 @@ if room = r_park
 	
 if room = r_chess
 	{
-	draw_text_ext_transformed(450, 160, "Toaster! Help me, Leo, checkmate Ben with white!", 20, 150, 0.5, 0.5, 0)
-	draw_text_ext_transformed(610, 290, "Grab the correct piece from the maze and place it on the highlighted tile", 20, 250, 0.5, 0.5, 0)
+	draw_text_ext_transformed(450, 160, "Toaster! Help me, Leo, checkmate Ben with white!", 25, 150, 0.5, 0.5, 0)
+	draw_text_ext_transformed(610, 290, "Grab the correct piece from the maze and place it on the highlighted tile", 25, 250, 0.5, 0.5, 0)
 	}
 if room = r_gamestop
 {

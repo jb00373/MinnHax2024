@@ -11,6 +11,7 @@ if instance_place(x, y, obj_pee)
 			{
 			sfx1 = 1;	
 			audio_play_sound(s_activate, 5, 0, 0.25)
+			audio_play_sound(s_drop, 5, 0, 0.25)
 			}
 	}
 
