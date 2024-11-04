@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "this_is_toaster_bark.mp3",
   "type": 0,
-  "volume": 0.76,
+  "volume": 0.45,
 }
